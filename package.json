@@ -1,0 +1,28 @@
+{
+  "name": "sistema-gerenciamento-bilheteria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "biome check src",
+    "format": "biome format --write src",
+    "build": "swc src -d dist",
+    "start": "npm run build && node --env-file=.env dist/src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.8.3",
+    "mysql2": "^3.11.3",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@swc/cli": "^0.4.0",
+    "@swc/core": "^1.7.2",
+    "@types/node": "20.14.12",
+    "@types/prompt-sync": "^4.2.3",
+    "typescript": "5.5.4"
+  }
+}
